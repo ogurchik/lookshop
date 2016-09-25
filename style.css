@@ -47,14 +47,27 @@ body {
 /********************top-menu *****************************/
 .top-menu {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  height: 105px; }
 
 .top-menu ul {
-  display: inline-flex; }
+  display: inline-flex;
+  margin-left: 15%; }
 
 .top-menu ul li {
   display: inline-flex;
-  padding: 4%; }
+  padding: 4%;
+  margin-right: 13.63636%; }
+
+.top-menu ul li:after {
+  display: inline-flex;
+  content: url(images/black-arrow.png);
+  margin-left: 6%;
+  margin-top: 7px;
+  margin-bottom: 5px; }
+
+.logo {
+  margin-left: 10%; }
 
 /******************** end top-menu *****************************/
 

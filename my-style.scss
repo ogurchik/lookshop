@@ -51,13 +51,26 @@ body {
 .top-menu {
 	display: flex;
 	align-items: center;
+	height: 105px;
 }
 .top-menu ul {
 	display: inline-flex;
+	margin-left: 180/1200*100%;
 }
 .top-menu ul li{
 	display: inline-flex;
 	padding: 4%;
+	margin-right: 60/440*100%;
+}
+.top-menu ul li:after {
+	display: inline-flex ;
+	content: url(images/black-arrow.png);
+	margin-left: 6%;
+	margin-top: 7px;
+	margin-bottom: 5px;
+}
+.logo {
+	margin-left: 120/1200*100%;
 }
 
 /******************** end top-menu *****************************/ 
