@@ -155,3 +155,50 @@ body {
 	max-height:100%;
 }
 /*************End slider *********************/
+.score-switch {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 75px;
+}
+.score-switch__item {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background: #867a76;
+	margin-left: 20/1200*100%;
+}
+/****************** social button and enter your email ***********************/
+.social-bar {
+	width: 100%;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	background: #ededed;
+}
+.enter-email {
+	display: flex;
+	align-items: center;
+	margin-left: 115/1200*100%;
+	font-size: 12/18*1em;
+}
+.enter-email input[type="email"] { 
+	border: none;
+	height: 30px;
+	margin-left: 10px;
+
+}
+.enter-email input[type="submit"] {
+	background: #fd926d;
+	border: none;
+	background-image: url(images/white-cross.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	height: 30px;
+	width: 30px;
+	margin-left: -5px;
+	box-shadow:  inset  0px -4px 1px rgba(0, 0, 0, .3);
+
+}
+/******************END  social button and enter your email ***********************/
