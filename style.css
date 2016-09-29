@@ -192,6 +192,27 @@ body {
   margin-left: -5px;
   box-shadow: inset 0px -4px 1px rgba(0, 0, 0, 0.3); }
 
+.social-button {
+  display: flex;
+  align-items: center;
+  margin-left: 37.5%;
+  font-size: 0.66667em; }
+
+.social-button div:nth-child(odd) {
+  background: #f7f7f7; }
+
+.social-button__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px; }
+
 /******************END  social button and enter your email ***********************/
+/********************** showcase *******************************************/
+.showcase {
+  height: 450px; }
+
+/********************** END  showcase *******************************************/
 
 /*# sourceMappingURL=style.css.map */
