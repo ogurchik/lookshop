@@ -223,7 +223,7 @@ body {
 .showcase {
 	display: flex;
 	margin-top: 40px;
-    height: 450px;
+    height: 350px;
     width: 975/1200*100%;
     margin-left: auto;
     margin-right: auto;
@@ -235,7 +235,7 @@ body {
 }
 .wrapper-for-outfits {
 	display: flex;
-	justify-content: center;
+    flex-direction: column;
 	align-items: center;
 	width: 280/485*100%;
 	height: 100%;
@@ -245,5 +245,36 @@ body {
 .showcase__collection-outfits-best {
 	font-size: 34/18*1em;
 	color: #414141;
+    margin-top: 60/350*100%;
+    margin-bottom: 0;
+}
+.showcase__collection-outfits-outfits{
+    margin-top: 0;
+    margin-bottom: 0;
+	font-size: 74/18*1em;
+	color: black;
+    font-family: "Times New Roman", Times, serif;
+}
+.showcase__collection--looks {
+	font-size: 82/18*1em;
+	color: #4fafa0;
+    margin-top: 0;
+    font-weight: bold;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.liner {
+    width: 45%;
+    height: 2px;
+background: black;
+}
+.sircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #414141;
 }
 /********************** END  showcase *******************************************/
