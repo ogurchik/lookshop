@@ -206,12 +206,36 @@ body {
   align-items: center;
   justify-content: center;
   width: 55px;
-  height: 55px; }
+  height: 55px;
+  background: 1px solid black; }
 
 /******************END  social button and enter your email ***********************/
 /********************** showcase *******************************************/
 .showcase {
-  height: 450px; }
+  display: flex;
+  margin-top: 40px;
+  height: 450px;
+  width: 81.25%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black; }
+
+.showcase__collection-outfits {
+  width: 49.74359%;
+  background-image: url(images/hipster.png); }
+
+.wrapper-for-outfits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57.73196%;
+  height: 100%;
+  margin-left: 39.17526%;
+  border: 1px solid white; }
+
+.showcase__collection-outfits-best {
+  font-size: 1.88889em;
+  color: #414141; }
 
 /********************** END  showcase *******************************************/
 
