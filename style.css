@@ -212,7 +212,7 @@ body {
 
 /******************END  social button and enter your email ***********************/
 /********************** showcase *******************************************/
-.showcase {
+.showcase, .model-gallery-control-block {
   display: flex;
   margin-top: 40px;
   height: 450px;
@@ -396,5 +396,50 @@ body {
   margin-left: 3%; }
 
 /********************** END  showcase *******************************************/
+/*****************model gallery control block *************************/
+.model-gallery-control-block {
+  height: 50px;
+  align-items: center;
+  justify-content: space-between; }
+
+.model-gallery-control-block__item {
+  display: flex;
+  align-items: center;
+  font-size: 0.83333em;
+  padding-left: 1.54004%;
+  padding-right: 1.54004%;
+  color: #555555;
+  height: 100%; }
+
+.model-gallery-control-block__item:hover {
+  color: white;
+  background: #fd926d; }
+
+.model-gallery-control-block__shunt {
+  display: flex;
+  width: 10.25641%;
+  height: 100%;
+  border: 1px solid black; }
+
+.model-gallery-control-block__shunt-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background: #fd926d; }
+
+.model-gallery-control-block__shunt-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background: #f2f2f2; }
+
+.wrap-for-model-gallery__item {
+  display: flex;
+  height: 100%;
+  width: 70%; }
+
+/*****************END model gallery control block *************************/
 
 /*# sourceMappingURL=style.css.map */
