@@ -444,10 +444,29 @@ body {
 /***************** model gallery ******************************/
 .gallery-of-model {
   display: flex;
+  position: relative;
   width: 100%;
   height: 450px;
+  background: #fd926d;
+  overflow: hidden; }
+
+.overlord {
+  display: flex;
+  position: absolute;
   align-items: center;
-  background: #fd926d; }
+  width: 130%;
+  height: 100%;
+  left: -15%; }
+
+.overlord > div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 20%;
+  background: white;
+  height: 400px;
+  margin-left: 15px;
+  margin-right: 15px;
+  overflow: hidden; }
 
 /***************** END model gallery ******************************/
 
