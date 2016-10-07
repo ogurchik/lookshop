@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <script src="jquery-1.7.2.min.js"></script>
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" href="style.css">
@@ -154,7 +155,20 @@
 </div>
 
 </div>
- joka 
- boka
+<div class="slider">
+    <div class="button-left"></div>
+    <div class="button-right"></div>
+    <div class="motion"><img src="images/mimose-lace.png" alt=""></div>
+</div>
 </body>
+<script type="text/javascript">
+    var kola = document.querySelector('.button-left')
+    var target = document.querySelector('img[src="images/mimose-lace.png"]');
+    kola.onclick = function() {
+        target.style.position="relative"
+        console.log(target.style.left);
+        target.offsetLeft=target.offsetLeft+40;
+        console.log(target.offsetLeft);
+    };
+</script>
 </html>

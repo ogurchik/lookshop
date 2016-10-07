@@ -469,5 +469,20 @@ body {
   overflow: hidden; }
 
 /***************** END model gallery ******************************/
+.button-left {
+  display: inline-block;
+  width: 50%;
+  background: red;
+  height: 20px; }
+
+.button-right {
+  display: inline-block;
+  width: 50%;
+  background: blue;
+  height: 20px; }
+
+.motion {
+  display: flex;
+  width: 1024px; }
 
 /*# sourceMappingURL=style.css.map */
