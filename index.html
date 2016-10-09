@@ -162,6 +162,7 @@
 </div>
 
     <div class="motion"><img class="govno" src="images/mimose-lace.png" alt="">
+        <img class="govno" src="images/feel-tank.png" alt="">
     </div>
 </body>
 <script type="text/javascript">
@@ -169,10 +170,20 @@
 <script>
 	var launch = document.querySelector('.button-left');
 	var slide = document.querySelectorAll('.govno');
+    var koja = document.querySelector('.govno');
+    koja.style.left ="300px";
 	slide = Array.prototype.slice.call(slide);
+setTimeout(function(){slide[0].style.left="500px"}, 3000);
 	launch.onclick = function() { slide.forEach(function(data){
 		$(data).animate({opacity:0.8, left:"+=50px"});
-		console.log(data.style.left)
+        var prop = data.style.left;
+        var prop =prop.match(/\d/g).join('');
+		console.log(prop);
+        data.style.left = "100px";
+        if(prop>500) {
+            console.log('sos!!!');
+            data.style.left="100px";
+        }
 	} ) }
 </script>
 </html>
