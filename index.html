@@ -3,6 +3,7 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     <script src="jquery-1.7.2.min.js"></script>
+    <script src="jquery.anythingslider.min.js"></script>
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" href="style.css">
@@ -151,24 +152,27 @@
 			<div class="price">
 			</div>
 		</div>
-        </div>
+	</div>
 </div>
 
 </div>
 <div class="slider">
     <div class="button-left"></div>
     <div class="button-right"></div>
-    <div class="motion"><img src="images/mimose-lace.png" alt=""></div>
 </div>
+
+    <div class="motion"><img class="govno" src="images/mimose-lace.png" alt="">
+    </div>
 </body>
 <script type="text/javascript">
-    var kola = document.querySelector('.button-left')
-    var target = document.querySelector('img[src="images/mimose-lace.png"]');
-    kola.onclick = function() {
-        target.style.position="relative"
-        console.log(target.style.left);
-        target.offsetLeft=target.offsetLeft+40;
-        console.log(target.offsetLeft);
-    };
+</script>
+<script>
+	var launch = document.querySelector('.button-left');
+	var slide = document.querySelectorAll('.govno');
+	slide = Array.prototype.slice.call(slide);
+	launch.onclick = function() { slide.forEach(function(data){
+		$(data).animate({opacity:0.8, left:"+=50px"});
+		console.log(data.style.left)
+	} ) }
 </script>
 </html>

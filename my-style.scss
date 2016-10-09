@@ -499,6 +499,10 @@ background: black;
     height: 20px;
 }
 .motion {
+	position: relative;
     display: flex;
     width: 1024px;
+}
+.motion img {
+	position:relative;
 }

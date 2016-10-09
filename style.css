@@ -469,6 +469,9 @@ body {
   overflow: hidden; }
 
 /***************** END model gallery ******************************/
+.slider {
+  width: 100%; }
+
 .button-left {
   display: inline-block;
   width: 50%;
@@ -482,7 +485,11 @@ body {
   height: 20px; }
 
 .motion {
+  position: relative;
   display: flex;
   width: 1024px; }
+
+.motion img {
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
