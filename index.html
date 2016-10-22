@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     <script src="jquery-1.7.2.min.js"></script>
     <script src="jquery.anythingslider.min.js"></script>
@@ -17,9 +19,7 @@
 
 	</div>	
 	<div class="top-menu">
-		<div class="logo"><img src="images/logo.png" alt=""></div>
-		<div class="list-menu">
-			<div class="psevdo-li">new <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
+		<div class="logo"><img src="images/logo.png" alt=""></div> <div class="list-menu"> <div class="psevdo-li">new <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
 			<div class="psevdo-li">designers <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
 			<div class="psevdo-li">women <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
 			<div class="psevdo-li">men <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
@@ -118,36 +118,42 @@
 	<div class="overlord">
 		<div class="photomodel-item">
 			<div class="photomodel-item__photo">
+				<img src="images/nigga.png" alt="">
 			</div>
 			<div class="price">
 			</div>
 		</div>
 		<div class="photomodel-item">
 			<div class="photomodel-item__photo">
+<img src="images/drise.jpg" alt="">
 			</div>
 			<div class="price">
 			</div>
 		</div>
 		<div class="photomodel-item">
 			<div class="photomodel-item__photo">
+<img src="images/feel-tank.png" alt="">
 			</div>
 			<div class="price">
 			</div>
 		</div>
 		<div class="photomodel-item">
 			<div class="photomodel-item__photo">
+				<img src="images/hot-shorts.png" alt="">
 			</div>
 			<div class="price">
 			</div>
 		</div>
 		<div class="photomodel-item">
 			<div class="photomodel-item__photo">
+<img src="images/fat-nigga.jpg" alt="">
 			</div>
 			<div class="price">
 			</div>
 		</div>
 		<div class="photomodel-item">
 			<div class="photomodel-item__photo">
+<img src="images/mimose-lace.png" alt="">
 			</div>
 			<div class="price">
 			</div>
@@ -156,23 +162,47 @@
 </div>
 
 </div>
-<div class="slider">
-    <div class="button-left"></div>
-    <div class="button-right"></div>
+<div class="man">
+	    <div class="slide-item"></div>
+	    <div class="slide-item"></div>
+	    <div class="slide-item"></div>
 </div>
 
-    <div class="motion"><img class="govno" src="images/mimose-lace.png" alt="">
-    </div>
-</body>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
+	$(document).ready(function() {
+		$('.overlord').slick({
+			centerMode: true,
+		  centerPadding: '60px',
+		  slidesToShow: 5,
+		responsive: [
+		{
+			      breakpoint: 768,
+		settings: {
+			        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 3
+			      
+		}
+		    
+		},
+		{
+			      breakpoint: 480,
+		settings: {
+			        arrows: false,
+		        centerMode: true,
+			        centerPadding: '40px',
+				        slidesToShow: 1
+						      
+		}
+			          
+		}
+		  
+			]
+		});
+	})
 </script>
-<script>
-	var launch = document.querySelector('.button-left');
-	var slide = document.querySelectorAll('.govno');
-	slide = Array.prototype.slice.call(slide);
-	launch.onclick = function() { slide.forEach(function(data){
-		$(data).animate({opacity:0.8, left:"+=50px"});
-		console.log(data.style.left)
-	} ) }
-</script>
+</body>
 </html>

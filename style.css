@@ -2,7 +2,8 @@ body {
   padding: 0;
   margin: 0;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  background: #aaa; }
 
 /********************** top-bar **************************/
 .top-bar {
@@ -491,5 +492,17 @@ body {
 
 .motion img {
   position: relative; }
+
+.center {
+  width: 400px; }
+
+.man {
+  width: 700px;
+  margin: auto;
+  background: black; }
+
+.photomodel-item__photo img {
+  max-height: 100%;
+  max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
