@@ -173,12 +173,15 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('.overlord').slick({
+			variableWidth: true,
+			prevArrow: $('.model-gallery-control-block__shunt-left'),
+			nextArrow: $('.model-gallery-control-block__shunt-right'),
 			centerMode: true,
-		  centerPadding: '60px',
+		  centerPadding: '20px',
 		  slidesToShow: 5,
 		responsive: [
 		{
-			      breakpoint: 768,
+			      breakpoint: 400,
 		settings: {
 			        arrows: false,
 		        centerMode: true,
@@ -189,7 +192,7 @@
 		    
 		},
 		{
-			      breakpoint: 480,
+			      breakpoint: 260,
 		settings: {
 			        arrows: false,
 		        centerMode: true,

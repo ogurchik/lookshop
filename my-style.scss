@@ -515,7 +515,21 @@ background: black;
 	margin: auto;
 	background: black;
 }
+
+.photomodel-item__photo {
+}
 .photomodel-item__photo img {
 	max-height: 100%;
 	max-width: 100%;
+}
+.photomodel-item {
+	overflow: hidden;
+	width: 220px;
+	height: 395/455*100%;
+	margin-top: auto;
+	margin-bottom: auto;
+} 
+.slick-slide {
+	border: 1px solid blue;
+	width: 150px;
 }

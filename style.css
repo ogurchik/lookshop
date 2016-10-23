@@ -505,4 +505,15 @@ body {
   max-height: 100%;
   max-width: 100%; }
 
+.photomodel-item {
+  overflow: hidden;
+  width: 220px;
+  height: 86.81319%;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.slick-slide {
+  border: 1px solid blue;
+  width: 150px; }
+
 /*# sourceMappingURL=style.css.map */
