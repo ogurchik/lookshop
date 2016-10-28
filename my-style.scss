@@ -3,7 +3,6 @@ body {
 	margin: 0;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
-	background: #aaa;
 }
 /********************** top-bar **************************/
 .top-bar {
@@ -493,4 +492,13 @@ background: black;
 }
 .slick-slide {
 	width: 220px;
+}
+.price__name-item {
+	display: flex;
+	background: white;
+	justify-content: center;
+	width: 100%;
+}
+.price__backs {
+	@extend .price__name-item;
 }

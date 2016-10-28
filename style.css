@@ -2,8 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  background: #aaa; }
+  font-family: 'Open Sans', sans-serif; }
 
 /********************** top-bar **************************/
 .top-bar {
@@ -479,5 +478,11 @@ body {
 
 .slick-slide {
   width: 220px; }
+
+.price__name-item, .price__backs {
+  display: flex;
+  background: white;
+  justify-content: center;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
