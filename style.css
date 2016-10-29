@@ -479,10 +479,17 @@ body {
 .slick-slide {
   width: 220px; }
 
-.price__name-item, .price__backs {
+.price__name-item, .price__backs, .add-to-cart {
   display: flex;
   background: white;
   justify-content: center;
   width: 100%; }
+
+.price {
+  height: 110px;
+  background: white;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */

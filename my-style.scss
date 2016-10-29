@@ -502,3 +502,12 @@ background: black;
 .price__backs {
 	@extend .price__name-item;
 }
+.add-to-cart {
+    @extend .price__name-item;
+}
+.price {
+    height: 110px;
+    background: white;
+    display: flex;
+    flex-direction:column;
+}
