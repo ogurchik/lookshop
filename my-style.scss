@@ -478,6 +478,7 @@ background: black;
 	width: 100%;
 }
 .photomodel-item {
+	position: relative;
 	overflow: hidden;
 	width: 220px;
 	height: 400px;
@@ -485,6 +486,29 @@ background: black;
 	margin-left: 15px;
 	margin-right: 15px;
 } 
+.shop-it {
+	visibility: hidden;
+	position: absolute;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 7em;
+	height: 7em;
+	border-radius: 50%;
+	background: #3d3d3d;
+	margin-left: auto;
+	margin-right: auto;
+	left: 20%;
+	top: 30%;
+}
+.shop-it p {
+	margin:0;
+}
+.photomodel-item:hover .shop-it {
+	visibility: visible;
+}
 .photomodel-item__photo {
 	width: 100%;
 	height: 290px;
@@ -509,5 +533,26 @@ background: black;
     height: 110px;
     background: white;
     display: flex;
+    position: relative;
     flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.price__name-item {
+	font-size: 12/18*1em;
+}
+.price__backs {
+	font-size: 22/12*1em;
+}
+.add-to-cart {
+	color: white;
+	padding-left: 12/222*100%;
+	padding-right: 12/222*100%;
+	background: #fd926d;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	width: 120/222*100%;
+	box-shadow: 0 -4px 1px rgba(0, 0, 0, 0.3) inset;
+	background: #fd926d url("images/white-cross.png") no-repeat scroll 85% 50%;
+
 }
