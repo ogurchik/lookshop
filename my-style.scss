@@ -600,5 +600,25 @@ background: black;
     right: 0;
     bottom:-85%;
 }
+.central-node {
+	position: absolute;
+	display: flex;
+        align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: 90%;
+	background-image:url(images/rim.png);
+	background-size: 90% 90%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom:0;
+}
 
 
