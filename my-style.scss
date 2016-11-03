@@ -641,10 +641,12 @@ background: black;
     font-size:20/50*1em;
     height: 50%;
     margin-top: 0;
-    border: 1px solid black;
+    position: relative;
+    bottom: 20px;
 }
 .sale_vertical-string div {
     margin: 0;
-    border: 1px solid blue;
+    padding: 0;
+    margin-bottom: -10px;
 }
 
