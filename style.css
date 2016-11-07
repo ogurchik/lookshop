@@ -623,4 +623,15 @@ body {
   padding: 0;
   margin-bottom: -10px; }
 
+/************* Other gallery *****************/
+.other-gallery {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.color-for-block-price {
+  background: #f7f7f7; }
+
+/*************END  Other gallery *****************/
+
 /*# sourceMappingURL=style.css.map */
