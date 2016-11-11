@@ -627,11 +627,40 @@ body {
 .other-gallery {
   display: flex;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 60px; }
 
 .color-for-block-price {
   background: #f7f7f7; }
 
 /*************END  Other gallery *****************/
+/************* favourite brands ******************/
+.favourite-brands {
+  margin-top: 60px;
+  width: 100%;
+  border: 1px solid blue; }
+
+.favourite-brands__caption {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px; }
+
+.caption-line {
+  height: 2px;
+  width: 37.5%;
+  background: #d8d8d8; }
+
+.caption {
+  margin-left: 1.66667%;
+  margin-right: 1.66667%; }
+
+.brands-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+/************* END favourite brands **************/
 
 /*# sourceMappingURL=style.css.map */

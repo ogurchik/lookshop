@@ -662,5 +662,29 @@ background: black;
 }
 /*************END  Other gallery *****************/
 /************* favourite brands ******************/
-
+.favourite-brands {
+    margin-top: 60px;
+    width: 100%;
+}
+.favourite-brands__caption {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.caption-line {
+    height: 2px;
+    width: 450/1200*100%;
+    background:#d8d8d8;
+}
+.caption {
+    margin-left: 20/1200*100%;
+    margin-right: 20/1200*100%;
+}
+.brands-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /************* END favourite brands **************/
