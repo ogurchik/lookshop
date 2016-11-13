@@ -637,8 +637,7 @@ body {
 /************* favourite brands ******************/
 .favourite-brands {
   margin-top: 60px;
-  width: 100%;
-  border: 1px solid blue; }
+  width: 100%; }
 
 .favourite-brands__caption {
   display: flex;
@@ -659,8 +658,59 @@ body {
 .brands-logo {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 30px; }
+
+.favourite-brand__ender-line {
+  background: #d8d8d8;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 30px; }
 
 /************* END favourite brands **************/
+/*************** About LookShop *****************/
+.about-lookshop__caption {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.33333em; }
+
+.about-lookshop__text {
+  width: 82.08333%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #999999;
+  font-size: 77.77778%;
+  text-align: center; }
+
+/*************** End About LookShop ************/
+/*************** footer ******************/
+.credit-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background: #f7f7f7;
+  color: #414141;
+  font-size: 0.77778em; }
+
+.credit-cart img {
+  margin-left: 1.25%; }
+
+footer li {
+  list-style-type: none;
+  font-size: 0.66667em;
+  color: #544f4d; }
+
+footer lh {
+  font-size: 0.88889em; }
+
+.additional-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline; }
+
+/************** end footer **************/
 
 /*# sourceMappingURL=style.css.map */

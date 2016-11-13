@@ -686,5 +686,59 @@ background: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 30px;
+}
+.favourite-brand__ender-line {
+    background:#d8d8d8;
+    height: 2px; 
+    width: 100%;
+    margin-bottom: 30px;
 }
 /************* END favourite brands **************/
+
+/*************** About LookShop *****************/
+.about-lookshop__caption {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-size: 24/18*1em;
+}
+.about-lookshop__text {
+	width: 985/1200*100%;
+	margin-right: auto;
+	margin-left: auto;
+	color: #999999;
+	font-size: 14/18*100%;
+	text-align: center;
+}
+/*************** End About LookShop ************/
+/*************** footer ******************/
+.credit-cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 100%;
+	background: #f7f7f7;
+	color: #414141;
+	font-size: 14/18*1em;
+}
+.credit-cart img {
+	margin-left: 15/1200*100%;
+}
+footer {
+}
+footer li {
+	list-style-type: none;
+	font-size: 12/18*1em;
+	color: #544f4d;
+}
+footer lh {
+	font-size: 16/18*1em;
+}
+.additional-info {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+/************** end footer **************/
