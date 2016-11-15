@@ -35,6 +35,9 @@
 	<div class="first-slider">
 		<img src="images/crazy-summer-banner.png" alt="">
 	</div>
+    <div class ="first-slider">
+        <p> Second slider </p>
+    </div>
 	<div class="right-switch-slider"><img class="arrow-switch-right" src="images/big-arrow.png" alt=""></div>
 </div>
 <div class="score-switch">
@@ -380,6 +383,12 @@
 			]
 		});
 	})
+$(document).ready(function() {
+    $('.slider').slick({
+			prevArrow: $('.left-switch-slider'),
+			nextArrow: $('.right-switch-slider'),
+    })
+})
 </script>
 </body>
 </html>
