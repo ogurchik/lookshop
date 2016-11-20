@@ -113,12 +113,21 @@ body {
 
 
 /************** slider ***********************/
+.slider-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    height: 400px;
+    width: 100%;
+    border: 1px solid blue;
+    overflow: hidden;
+}
 .slider {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 415px;	
-	width: 100%;
+	width: 80%;
 	background: #ece5db;
 }
 .left-switch-slider {
