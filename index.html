@@ -31,13 +31,13 @@
 	</div>
 	</div>
 <div class="slider-wrap">
-    <div class="slide-left"></div>
+    <div class="slide-left"><img src="images/big-arrow.png" alt="" class="rotate"></div>
     <div class="slider">
         <img src="images/navy-short.png" alt="">
         <img src="images/nigga.png" alt="">
         <img src="images/blue-girl.png" alt="">
     </div>
-    <div class="slide-right"></div>
+    <div class="slide-right"><img src="images/big-arrow.png" alt=""></div>
 </div>
 <div class="score-switch">
 	<div class="score-switch__item"> </div>
@@ -384,8 +384,8 @@
 	})
 $(document).ready(function() {
     $('.slider').slick({
-			prevArrow: $('.left-switch-slider'),
-			nextArrow: $('.right-switch-slider'),
+			prevArrow: $('.slide-left'),
+			nextArrow: $('.slide-right'),
     })
 })
 </script>

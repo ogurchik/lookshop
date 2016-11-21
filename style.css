@@ -107,6 +107,7 @@ body {
 /******************** end top-menu *****************************/
 /************** slider ***********************/
 .slider-wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,8 +121,35 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 415px;
-  width: 80%;
+  width: 100%;
   background: #ece5db; }
+
+.slide-left {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5%;
+  height: 110px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  z-index: 1000; }
+
+.rotate {
+  transform: rotate(180deg); }
+
+.slide-right {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5%;
+  height: 110px;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  z-index: 1000; }
 
 .left-switch-slider {
   display: flex;
