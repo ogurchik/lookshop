@@ -125,10 +125,9 @@ body {
 }
 .slider {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	height: 415px;	
-	width: 100%;
+    width: 100%;
 	background: #ece5db;
 }
 .slide-left {
@@ -142,6 +141,14 @@ body {
     top:50%;
     left: 0%;
     z-index: 1000;
+}
+.gut-slider {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.gut-slider__img {
+    display: inline-block;
 }
 .rotate {
     transform: rotate(180deg);
