@@ -67,6 +67,10 @@ body {
   list-style-type: none;
   margin-left: 9.1954%; }
 
+.psevdo-li__inner-img {
+  margin-left: 5px;
+  transform: rotate(-90deg); }
+
 .psevdo-li:first-child {
   margin-left: 0; }
 

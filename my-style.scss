@@ -71,6 +71,10 @@ body {
 	list-style-type: none;
 	margin-left: 40/435*100%;
 }
+.psevdo-li__inner-img {
+	margin-left: 5px;
+	transform: rotate(-90deg);
+}
 .psevdo-li:first-child {
 	margin-left: 0;
 }
