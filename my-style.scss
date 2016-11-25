@@ -67,13 +67,30 @@ body {
 }
 .psevdo-li {
 	display: flex;
+    position: relative;
 	align-items: center;
 	list-style-type: none;
 	margin-left: 40/435*100%;
 }
+.dropdown {
+    display: none;
+    position: absolute;
+    width: 150%;
+    height: 300px;
+    z-index: 1000;
+    top: 30px;
+    left: -25%;
+    background-color: rgba(249, 249, 249, 1);
+}
+.psevdo-li:hover .dropdown {
+    display: block;
+}
 .psevdo-li__inner-img {
 	margin-left: 5px;
 	transform: rotate(-90deg);
+}
+.psevdo-li:hover .psevdo-li__inner-img {
+    transform: rotate(0deg);
 }
 .psevdo-li:first-child {
 	margin-left: 0;
@@ -124,7 +141,6 @@ body {
 	align-items: center;
     height: 400px;
     width: 100%;
-    border: 1px solid blue;
     overflow: hidden;
 }
 .slider {
@@ -520,7 +536,6 @@ background: black;
 	width: 130%;
 	height: 100%;
 	left: -15%;
-	border: 1px solid blue;
 }
 
 /***************** END model gallery ******************************/
@@ -652,7 +667,6 @@ background: black;
     bottom:-85%;
 }
 .central-node {
-    border: 1px solid blue;
 	position: absolute;
     color: white;
 	display: flex;
