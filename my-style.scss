@@ -75,12 +75,23 @@ body {
 .dropdown {
     display: none;
     position: absolute;
-    width: 150%;
-    height: 300px;
     z-index: 1000;
-    top: 30px;
-    left: -25%;
+    width: 100px;
+    top: 20px;
+    left: 0;
     background-color: rgba(249, 249, 249, 1);
+}
+.dropdown ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+.dropdown ul li:hover {
+    background: rgb(117, 234, 201);
 }
 .psevdo-li:hover .dropdown {
     display: block;
