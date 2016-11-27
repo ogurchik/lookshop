@@ -81,25 +81,17 @@
 		<div class="describe-cart">0 ITEMS | $0 </div>
 	</div>
 	</div>
-<div class="slider-wrap">
-    <div class="slide-left"><img src="images/big-arrow.png" alt="" class="rotate"></div>
-    <div class="slider">
-        <div class="gut-slider"><div><img class="gut-slider__img" src="images/crazy-summer-banner.png" alt=""></div>
-        </div>
-        <div>second</div>
-        <div>three</div>
-    </div>
-    <div class="slide-right"><img src="images/big-arrow.png" alt=""></div>
-</div>
-<div class="slick-dots">
-    <!--
-	<div class="score-switch__item"> </div>
-	<div class="score-switch__item"></div>
-	<div class="score-switch__item"></div>
-	<div class="score-switch__item"></div>
-	<div class="score-switch__item"></div>
-    <div class="score-switch__item"></div> -->
-</div>
+	<div class="wrap">
+		<div class="slide-left"><img src="images/big-arrow.png" alt="" class="rotate"></div>
+		<div class="oregon">
+			<div class="gut-slider">
+				<div><img class="gut-slider__img" src="images/crazy-summer-banner.png" alt=""></div>
+		        </div>
+			<div>second</div>
+			<div>three</div>
+		</div>
+		<div class="slide-right"><img src="images/big-arrow.png" alt=""></div>
+	</div>
 <div class="social-bar">
 	<div class="enter-email">
 		Stay update 
@@ -134,8 +126,7 @@
 				<div class="inner-white-sircle">
 					<p class="inner-white-sircle__summer">Summer</p>
 					<p class="inner-white-sircle__party">PARTY</p>
-					<p class="inner-white-sircle__collection">collection</p>
-				</div>
+					<p class="inner-white-sircle__collection">collection</p> </div>
 			</div>
 		</div>
 		<div class="left-side-showcase__wrapper-low-layer">
@@ -437,6 +428,13 @@
 	})
 $(document).ready(function() {
     $('.slider').slick({
+			prevArrow: $('.slide-left'),
+			nextArrow: $('.slide-right'),
+            dots: true
+    })
+})
+$(document).ready(function() {
+    $('.oregon').slick({
 			prevArrow: $('.slide-left'),
 			nextArrow: $('.slide-right'),
             dots: true
