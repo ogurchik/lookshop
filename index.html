@@ -440,6 +440,19 @@ $(document).ready(function() {
             dots: true
     })
 })
+console.log('govno');
+    console.log("jeka");
+    var leftTumbler = document.querySelector('.model-gallery-control-block__shunt-left');
+    var rightTumbler = document.querySelector('.model-gallery-control-block__shunt-right');
+    rightTumbler.onclick = function() {
+        console.log("hoho");
+        rightTumbler.style.backgroundColor = '#fd926d';
+        leftTumbler.style.backgroundColor ='#f2f2f2'
+    }
+    leftTumbler.onclick = function() {
+        leftTumbler.style.backgroundColor = '#fd926d';
+        rightTumbler.style.backgroundColor ='#f2f2f2'
+    }
 </script>
 </body>
 </html>
