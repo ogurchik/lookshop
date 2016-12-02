@@ -14,11 +14,26 @@ body {
 	color: white;
 	font-size: 0.6666666em;
 }
+@media only screen and (max-width: 800px) {
+.top-bar__choose-valuta {
+    border: 1px solid white;
+    color: blue;
+	margin: 0;
+    width: 10%;
+}
+.top-bar__telephon {
+	margin-left: 40/1200*100%;
+    border: 1px solid white;
+    width: 50%;
+}
+
+}
 .top-bar__telephon {
 	margin-left: 115/1200*100%;
 }
 .top-bar__choose-valuta {
 	display: flex;
+    position: relative;
 	align-items: center;
 	border-left: 1px solid white;
 	margin-left: 575/1200*100%;
@@ -676,6 +691,7 @@ background: black;
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 .price__name-item {
 	font-size: 12/18*1em;
@@ -693,6 +709,7 @@ background: black;
 	width: 120/222*100%;
 	box-shadow: 0 -4px 1px rgba(0, 0, 0, 0.3) inset;
 	background: #fd926d url("images/white-cross.png") no-repeat scroll 85% 50%;
+    text-decoration: none;
 
 }
 /*************************End slider ***************************/
