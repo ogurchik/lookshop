@@ -14,17 +14,6 @@ body {
   color: white;
   font-size: 0.6666666em; }
 
-@media only screen and (max-width: 800px) {
-  .top-bar__choose-valuta {
-    border: 1px solid white;
-    color: blue;
-    margin: 0;
-    width: 10%; }
-
-  .top-bar__telephon {
-    margin-left: 3.33333%;
-    border: 1px solid white;
-    width: 50%; } }
 .top-bar__telephon {
   margin-left: 9.58333%; }
 
@@ -861,5 +850,30 @@ footer lh {
   align-items: baseline; }
 
 /************** end footer **************/
+@media (max-width: 800px) {
+  top-menu {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .top-bar__choose-valuta {
+    border: 1px solid white;
+    margin-left: 10%;
+    width: 10%; }
+
+  .top-bar__telephon {
+    margin-left: 3.33333%;
+    border: 1px solid white; }
+
+  .logo {
+    width: 50%; }
+
+  .client-cart {
+    width: 49%;
+    order: 2; }
+
+  .list-menu {
+    width: 100%;
+    order: 3;
+    flex: 1 0; } }
 
 /*# sourceMappingURL=style.css.map */

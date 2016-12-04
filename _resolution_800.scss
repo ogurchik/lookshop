@@ -1,0 +1,30 @@
+@media  (max-width:800px) {
+	top-menu {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.top-bar__choose-valuta {
+                border: 1px solid white;
+		margin-left: 10%;
+	        width: 10%;
+
+	}
+	.top-bar__telephon { 
+               margin-left: 40/1200*100%;
+              border: 1px solid white;
+         }
+	 .logo {
+		 width: 50%;
+	 }
+	 .client-cart {
+		 width: 49%;
+		 order: 2;
+	 }
+	 .list-menu {
+		 width: 100%;
+		 order: 3;
+		 flex: 1 0;
+
+	 }
+
+}
