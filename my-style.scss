@@ -14,22 +14,9 @@ body {
 	color: white;
 	font-size: 0.6666666em;
 }
-@media only screen and (max-width: 800px) {
-.top-bar__choose-valuta {
-    border: 1px solid white;
-    color: blue;
-	margin: 0;
-    width: 10%;
-}
-.top-bar__telephon {
-	margin-left: 40/1200*100%;
-    border: 1px solid white;
-    width: 50%;
-}
-
-}
 .top-bar__telephon {
 	margin-left: 115/1200*100%;
+    width: 50%;
 }
 .top-bar__choose-valuta {
 	display: flex;
@@ -895,3 +882,18 @@ footer lh {
 	align-items: baseline;
 }
 /************** end footer **************/
+
+@media  screen and (max-width: 800px) {
+    .top-bar__choose-valuta {
+        border: 1px solid white;
+        color: blue;
+        margin: 0;
+        width: 10%;
+    }
+    .top-bar__telephon {
+        margin-left: 40/1200*100%;
+        border: 2px solid white;
+        width: 70%;
+        
+    }
+}
