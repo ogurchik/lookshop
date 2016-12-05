@@ -14,6 +14,28 @@ body {
 	color: white;
 	font-size: 0.6666666em;
 }
+/*  experement */
+.experement {
+    display: flex;
+    width: 100%;
+    border: 1px solid blue;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.one {
+    width: 33%;
+    border: 1px solid black;
+}
+.two {
+    width: 33%;
+    border: 1px solid black;
+}
+.three {
+    width: 33%;
+    border: 1px solid black;
+    flex-grow:1;
+}
+/* end experement */
 .top-bar__telephon {
 	margin-left: 115/1200*100%;
     width: 50%;
@@ -54,7 +76,6 @@ body {
 .top-menu {
 	display: flex;
 	align-items: center;
-	height: 105px;
 }
 .list-menu{
     display: inline-flex;
@@ -882,18 +903,4 @@ footer lh {
 	align-items: baseline;
 }
 /************** end footer **************/
-
-@media  screen and (max-width: 800px) {
-    .top-bar__choose-valuta {
-        border: 1px solid white;
-        color: blue;
-        margin: 0;
-        width: 10%;
-    }
-    .top-bar__telephon {
-        margin-left: 40/1200*100%;
-        border: 2px solid white;
-        width: 70%;
-        
-    }
-}
+@import 'resolution_800'
