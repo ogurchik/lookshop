@@ -14,28 +14,6 @@ body {
   color: white;
   font-size: 0.6666666em; }
 
-/*  experement */
-.experement {
-  display: flex;
-  width: 100%;
-  border: 1px solid blue;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-
-.one {
-  width: 33%;
-  border: 1px solid black; }
-
-.two {
-  width: 33%;
-  border: 1px solid black; }
-
-.three {
-  width: 33%;
-  border: 1px solid black;
-  flex-grow: 1; }
-
-/* end experement */
 .top-bar__telephon {
   margin-left: 9.58333%;
   width: 50%; }
@@ -77,7 +55,6 @@ body {
 .list-menu {
   display: inline-flex;
   flex-direction: row;
-  padding: 4%;
   width: 66.66667%;
   margin-left: 5%;
   border: 1px solid black;
@@ -189,7 +166,7 @@ body {
   width: 2.5%;
   height: 110px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 0%;
   z-index: 1000; }
 
@@ -263,7 +240,7 @@ body {
   width: 2.5%;
   height: 110px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: 0%;
   z-index: 1000; }
 
@@ -872,10 +849,12 @@ footer lh {
   align-items: baseline; }
 
 /************** end footer **************/
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .top-menu {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
   .top-bar__choose-valuta {
     border: 1px solid white;
@@ -891,11 +870,18 @@ footer lh {
 
   .client-cart {
     width: 49%;
-    order: 2; }
+    order: 2;
+    margin-bottom: 20px; }
 
   .list-menu {
-    color: blue;
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-around;
     order: 3;
-    flex: 1 0; } }
+    flex: 1 0; }
+
+  .social-button {
+    margin-left: 20%; } }
 
 /*# sourceMappingURL=style.css.map */
