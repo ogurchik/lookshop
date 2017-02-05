@@ -66,7 +66,6 @@ select {
   flex-direction: row;
   width: 66.66667%;
   margin-left: 5%;
-  border: 1px solid black;
   padding-left: 0;
   padding-right: 0; }
 
@@ -433,7 +432,7 @@ select {
 .left-side-showcase {
   display: flex;
   flex-direction: column;
-  width: 49.74359%;
+  width: 51.28205%;
   height: 100%;
   padding: 0;
   /*margin-left:2px; */ }
@@ -443,7 +442,7 @@ select {
   align-items: center;
   width: 100%;
   /*	height: 200/345*100%;*/
-  height: 30%;
+  height: 50%;
   background-image: url(images/summer-party-background.png);
   background-position: 80% 10%; }
 
@@ -495,9 +494,8 @@ select {
   display: flex;
   /*	margin-left:2px;*/
   /*	margin-top: 2px; */
-  height: 86.95652%;
-  width: 100%;
-  border: 1px solid red; }
+  height: 50%;
+  width: 100%; }
 
 .best-sellers {
   display: flex;
@@ -505,7 +503,7 @@ select {
   align-items: flex-end;
   width: 50%;
   background-image: url(images/girl-with-glasses.png);
-  background-position: 75% 15%;
+  background-position: 50% 5%;
   height: 100%;
   font-size: 1.88889em;
   color: white;
@@ -539,7 +537,7 @@ select {
   justify-content: center;
   font-size: 0.66667em;
   background: #4fafa0;
-  width: 70%; }
+  width: 90%; }
 
 .triangle {
   display: inline-block;
@@ -787,6 +785,26 @@ select {
 
 .color-for-block-price {
   background: #f7f7f7; }
+
+.flag-sale {
+  position: absolute;
+  color: white;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  background: #4c4c4c;
+  overflow: hidden; }
+
+.flag-sale:after {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  transform: rotate(45deg); }
 
 /*************END  Other gallery *****************/
 /************* favourite brands ******************/
