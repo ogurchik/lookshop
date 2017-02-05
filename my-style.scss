@@ -16,20 +16,32 @@ body {
 }
 .top-bar__telephon {
 	margin-left: 115/1200*100%;
+    width: 50%;
+}
+select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+          appearance: none;
+          background: black;
+          border: none;
+
 }
 .top-bar__choose-valuta {
 	display: flex;
+    position: relative;
 	align-items: center;
 	border-left: 1px solid white;
-	margin-left: 575/1200*100%;
+	margin-left: 300/1200*100%;
 	padding-left: 15/1200*100%;
 	padding-right: 15/1200*100%;
+    color: white;
 }
 .top-bar__choose-valuta img{
 	padding-left: 5px;
 }
 .top-bar__account {
 	display: flex;
+    width:10%;
 	align-items: center;
 	padding-left: 15/1200*100%;
 	padding-right: 15/1200*100%;
@@ -52,24 +64,54 @@ body {
 .top-menu {
 	display: flex;
 	align-items: center;
-	height: 105px;
 }
 .list-menu{
-	display: inline-flex;
+    display: inline-flex;
 	flex-direction: row;
-	padding: 4%;
 	width: 800/1200*100%;
 	margin-left: 60/1200*100%;
-	border: 1px solid black;
 	padding-left: 0;
 	padding-right: 0;
 
 }
 .psevdo-li {
 	display: flex;
+    position: relative;
 	align-items: center;
 	list-style-type: none;
 	margin-left: 40/435*100%;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 100px;
+    top: 23px;
+    left: 0;
+    background-color: rgba(249, 249, 249, 1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+.dropdown ul li:hover {
+    background: rgb(117, 234, 201);
+}
+.psevdo-li:hover .dropdown {
+    display: block;
+}
+.psevdo-li__inner-img {
+	margin-left: 5px;
+	transform: rotate(-90deg);
+}
+.psevdo-li:hover .psevdo-li__inner-img {
+    transform: rotate(0deg);
 }
 .psevdo-li:first-child {
 	margin-left: 0;
@@ -113,13 +155,112 @@ body {
 
 
 /************** slider ***********************/
-.slider {
+.slider-wrap {
+    position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 415px;	
-	width: 100%;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.wrap {
+	margin-bottom: 50px;
+    position: relative;
+}
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
 	background: #ece5db;
+}
+.slide-left {
+    background: white;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 30/1200*100%;
+    height: 110px;
+    position: absolute;
+    top:30%;
+    left: 0%;
+    z-index: 1000;
+}
+.gut-slider {
+    width: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    background-image: url(images/girl-in-short.png);
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+    background-color: #ede6de;
+}
+.second-banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    background-image: url(images/second-banner.jpg);
+    background-repeat: no-repeat;
+    background-color: #ede6de;
+    background-size: cover;
+}
+.gut-slider div{
+    flex-direction: column;
+    padding-top: 50px;
+}
+.slider-banner {
+	/* huge proble with slick-slider , there i can't do display flex, thus i apply nesting too many div */
+	display: flex;
+	flex-direction: column;
+        width: 400/1200*100%;	
+	align-items: center;
+	justify-content: center;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+.link-in-slider {
+	width: 160/362*100%;
+	font-size: 16/18*1em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fd926d;
+	border: none;
+	color: white;
+	box-shadow: 0 4px 2px -2px gray;
+	text-align: center;
+	text-decoration: none;
+	overflow: visible;
+
+}
+.small-left-arrow {
+	display: inline-block;
+	width: 0; 
+	height: 0; 
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent; 
+	border-left:5px solid white;
+}
+.slick-dots {
+	margin-top: 50px;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.slide-right {
+    background: white;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 30/1200*100%;
+    height: 110px;
+    position: absolute;
+    top:30%;
+    right: 0%;
+    z-index: 1000;
 }
 .left-switch-slider {
 	display: flex;
@@ -143,6 +284,9 @@ body {
 .arrow-switch-right {
 	transform: scale(1.5, 1.5);
 }
+.oregon {
+    width: 100%;
+}
 .first-slider {
 	display: flex;
 	height: 100%;
@@ -162,6 +306,10 @@ body {
 	align-items: center;
 	width: 100%;
 	height: 75px;
+    z-index: 9000;
+}
+.slick-dots {
+    top: 350px;
 }
 .score-switch__item {
 	height: 10px;
@@ -208,8 +356,16 @@ body {
     margin-left: 450/1200*100%;
 	font-size: 12/18*1em;
 }
-.social-button div:nth-child(odd) {
+.caption-social-button {
+    display: inline-block;
+    width: 100/250*100%;
+    margin-right: 15/250*100%;
+}
+.social-button div:nth-child(even) {
     background:#f7f7f7;
+}
+.social-button__item:first-child {
+
 }
 .social-button__item {
     display: flex;
@@ -291,15 +447,17 @@ background: black;
 .left-side-showcase {
 	display: flex;
 	flex-direction: column;
-	width: 485/975*100%;
+	width: 500/975*100%;
+    height: 100%;
 	padding: 0;
-	margin-left:2px;
+	/*margin-left:2px; */
 }
 .left-side-showcase__summer-party {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	height: 200/345*100%;
+/*	height: 200/345*100%;*/
+    height:50%;
 	background-image: url(images/summer-party-background.png);
 	background-position:  80% 10%;
 }
@@ -349,9 +507,9 @@ background: black;
 }
 .left-side-showcase__wrapper-low-layer {
 	display: flex;
-	margin-left:2px;
-	margin-top: 2px;
-	height: 143/345*100%;
+/*	margin-left:2px;*/
+/*	margin-top: 2px; */
+	height: 50%;
 	width: 100%;
 }
 .best-sellers {
@@ -360,7 +518,7 @@ background: black;
 	align-items: flex-end;
 	width: 50%;
 	background-image: url(images/girl-with-glasses.png);
-	background-position: 75% 15%;
+	background-position: 50% 5%;
 	height: 100%;
 	font-size: 34/18*1em;
 	color: white;
@@ -395,7 +553,7 @@ background: black;
 	justify-content: center;
 	font-size: 12/18*1em;
 	background: #4fafa0;
-	width: 70%;
+	width: 90%;
 }
 .triangle {
     display: inline-block;
@@ -469,7 +627,6 @@ background: black;
 	width: 130%;
 	height: 100%;
 	left: -15%;
-	border: 1px solid blue;
 }
 
 /***************** END model gallery ******************************/
@@ -539,6 +696,7 @@ background: black;
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 .price__name-item {
 	font-size: 12/18*1em;
@@ -556,6 +714,7 @@ background: black;
 	width: 120/222*100%;
 	box-shadow: 0 -4px 1px rgba(0, 0, 0, 0.3) inset;
 	background: #fd926d url("images/white-cross.png") no-repeat scroll 85% 50%;
+    text-decoration: none;
 
 }
 /*************************End slider ***************************/
@@ -601,7 +760,6 @@ background: black;
     bottom:-85%;
 }
 .central-node {
-    border: 1px solid blue;
 	position: absolute;
     color: white;
 	display: flex;
@@ -659,6 +817,26 @@ background: black;
 }
 .color-for-block-price {
 	background: #f7f7f7;
+}
+.flag-sale {
+	position: absolute;
+	color: white;
+	width: 50px;
+	height:50px;
+	left:0;
+	top:0;
+	background: #4c4c4c;
+	overflow: hidden;
+}
+.flag-sale:after {
+	content: '';
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	height: 70px;
+	width: 70px;
+	background-color: white;
+	transform: rotate(45deg);
 }
 /*************END  Other gallery *****************/
 /************* favourite brands ******************/
@@ -742,3 +920,4 @@ footer lh {
 	align-items: baseline;
 }
 /************** end footer **************/
+@import 'resolution_800'

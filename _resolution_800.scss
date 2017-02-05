@@ -1,0 +1,38 @@
+@media  (max-width:1000px) {
+	.top-menu {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.top-bar__choose-valuta {
+                border: 1px solid white;
+		margin-left: 10%;
+	        width: 10%;
+
+	}
+	.top-bar__telephon { 
+               margin-left: 40/1200*100%;
+              border: 1px solid white;
+         }
+	 .logo {
+		 width: 30%;
+	 }
+	 .client-cart {
+		 width: 49%;
+		 order: 2;
+		 margin-bottom: 20px;
+	 }
+	 .list-menu {
+		 display: flex;
+		 width: 100%;
+		 margin-left: 0;
+		 justify-content: space-around;
+		 order: 3;
+		 flex: 1 0;
+	 }
+	 .social-button {
+		 margin-left: 20%;
+	 }
+
+}
